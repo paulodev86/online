@@ -442,9 +442,6 @@ m4_ifelse(MOBILEAPP,[true],
        <script src="%SERVICE_ROOT%/browser/%VERSION%/bundle.js" defer></script>
   ])
 )m4_dnl
-
-    m4_ifelse(MOBILEAPP,[true],
-    [<script src="m4_ifelse(IOSAPP,[true],[Branding/])branding.js"></script>],
     [<!--%BRANDING_JS%--> <!-- logo onclick handler -->
     <!--%CSS_VARIABLES%-->])
 </body></html>
